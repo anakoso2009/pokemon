@@ -1,0 +1,23 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anakoso2009/pokemon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anakoso2009/pokemon/issues"
+  },
+  "homepage": "https://github.com/anakoso2009/pokemon#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
