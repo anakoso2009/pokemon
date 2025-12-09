@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 
 *{
@@ -74,12 +75,90 @@ header {
 
 /*MAIN*/
 #txtapresentação {
-    font-family: 'Pokemon Solid', sans-serif;
+    font-family: "Luckiest Guy", cursive;
     font-size: 32px;
     color: #FBA700;
     text-align: center;
     margin-top: 50px;
 }
+/*direita*/
+.direita {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+
+}
+
+.fontedireita {
+    background-color: rgb(128, 226, 43);
+    color: #FBA700;
+    font-size: 30px;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 90px;
+}
+
+#pikachudireita {
+    background-color: rgb(194, 0, 0);
+    background-image: url("../IMG/Pikachu pg home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+    padding-left: 70px;
+}
+
+#dragonitedireita {
+    background-color: rgb(194, 0, 0);
+    background-image: url("../IMG/Dragonite pg home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+    padding-left: 70px;
+}
+/*direita*/
+
+/*esquerda*/
+.esquerda {
+    background-color: rgb(255, 0, 200);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.fonteesquerda {
+    background-color: rgb(0, 229, 255);
+    color: #FBA700;
+    font-size: 30px;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: right;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 90px;
+}
+
+#charizardesquerda {
+    background-color: rgb(0, 0, 0);
+    background-image: url("../IMG/Charizard\ pg\ home.png");
+    background-repeat: no-repeat;
+    background-size: contain;;
+    width: 100%;
+    height: 350px
+}
+
+#umbreonesquerda {
+    background-color: rgb(242, 255, 1);
+    background-image: url("../IMG/Umbreon\ pg\ home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+}
+/*esquerda*/
 
 #Apresentaçãogrupo {
     background-image: url("../IMG/Apresentação do grupo.png");
