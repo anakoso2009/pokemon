@@ -108,3 +108,80 @@ header {
 }
 
 
+/*cards*/
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* ---------------- CARD ---------------- */
+
+.pokemon-card {
+    background: linear-gradient(180deg, #BC36FF, #D5D5D5);
+    border-radius: 14px;
+    padding: 14px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    transition: transform .2s;
+    position: relative;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-6px);
+}
+
+/* FRENTE */
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 5px;
+}
+
+.poke-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background-color: rgb(229, 221, 235) o;
+  
+}
+
+.poke-name {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.know-more {
+  font-size: 13px;
+  opacity: .8;
+  color: rgb(200, 0, 245);
+}
+
+/* VERSO */
+.card-back {
+  display: none;
+  font-size: 16px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card-back p {
+  margin: 6px 0;
+}
+
+/* QUANDO ABRE */
+.pokemon-card.open .card-front { display: none; }
+.pokemon-card.open .card-back { display: block; }
+
+/* Aplica fonte Lexend a tudo */
+.pokemon-card,
+.pokemon-card * {
+  font-family: "Lexend Deca", sans-serif;
+}
