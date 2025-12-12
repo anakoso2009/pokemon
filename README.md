@@ -1,1 +1,4 @@
 # pokemon
+No Projeto Final do SENAI, nosso grupo, formado por Ana Beatriz Batistella, Ana Luiza Koso, Maria Alice Costa, Maria Luisa Dias e Maria Luiza Pessoa, dividiu as tarefas para garantir organização e equilíbrio no desenvolvimento. Cada integrante ficou responsável por uma página: Home (Maria Luiza Pessoa), Dragão (Maria Alice Costa), Elétrico (Ana Beatriz Batistella), Voador (Ana Luiza Koso) e Escuridão (Maria Luisa Dias). Todas criaram suas telas no Figma, fizeram o design e a responsividade de suas páginas.
+
+O header e o footer foram feitos por Maria Luiza Pessoa. A liderança ficou com Ana Luiza Koso e a vice-liderança com Maria Luisa Dias, que juntas definiram fontes, cores, repositório, base do JavaScript e o design dos cards. Essa divisão permitiu um desenvolvimento organizado e eficiente.
