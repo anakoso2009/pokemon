@@ -1,23 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 
-
-*{
+* {
     margin: 0%;
 }
 
 body {
-    
-    background-color: aqua;
+    background-image: url(../IMG/Fundo.png);
 }
 
+/*HEADER*/
 header {
-    background-image: url();
-    background-color: #ffff;
     width: 100%;
-    height: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
 
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+
+    }
+
+}
+
+a {
+    padding: 10px 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 0;
+    font-size: 20px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+
+
+#Letras {
+    color: black;
+    font-size: 26px;
     text-align: right;
     display: flex;
-    justify-content:space-around
+    align-items: center;
+    justify-content: space-between;
+}
 
+#LogoPokemon {
+    background-image: url(../IMG/Logo\ Pokemon.png);
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*HEADER*/
+
+
+
+
+
+
+
+
+
+/*MAIN*/
+#txtapresentação {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 32px;
+    color: #FBA700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*direita*/
+.direita {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
 
 }
+
+.fontedireita {
+    color: #FBA700;
+    font-size: 30px;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 90px;
+    padding-right: 90px;
+}
+
+#pikachudireita {
+    background-image: url("../IMG/Pikachu pg home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+    padding-left: 70px;
+}
+
+#dragonitedireita {
+    background-image: url("../IMG/Dragonite pg home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+    padding-left: 70px;
+}
+
+/*direita*/
+
+/*esquerda*/
+.esquerda {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.fonteesquerda {
+    color: #FBA700;
+    font-size: 30px;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: right;
+    padding-left: 50px;
+    padding-top: 90px;
+    padding-right: 90px;
+}
+
+#charizardesquerda {
+    background-image: url("../IMG/MCharizard.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+}
+
+#umbreonesquerda {
+    background-image: url("../IMG/Umbreon\ pg\ home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+}
+
+/*esquerda*/
+
+#Apresentaçãogrupo {
+    background-image: url("../IMG/Apresentação do grupo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 900px;
+    margin-top: 150px;
+}
+
+/*MAIN*/
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    padding-top: 5px;
+    width: 100%;
+    height: 190px;
+    background-color: #ffffff;
+
+    #frase {
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 18px;
+        color: black;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #Final {
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        padding-top: 15px;
+    }
+}
+
+/*FOOTER*/
+
+
+
+
+/*RESPONSIVIDADE*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    /*HEADER*/
+    header {
+        padding-top: 5px;
+        height: 200px;
+        font-size: 30px;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    
+    ul {
+        padding: 0px;
+    }
+    
+    /*HEADER*/
+    
+    /*MAIN*/
+     /* Texto de apresentação */
+    #txtapresentação {
+        font-size: 28px;
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    
+    .direita {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px 10px;
+        align-items: center;
+    }
+    
+    .esquerda {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    
+    .fontedireita,
+    .fonteesquerda {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    /* Imagens */
+    #umbreonesquerda {
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        padding: 0px;
+        background-position: center;
+    }
+    
+    #dragonitedireita {
+        width: 100%;
+        height: 250px;
+        align-items: center;
+        padding: 0px;
+        background-position: center;
+    }
+    
+    #pikachudireita {
+        width: 100%;
+        height: 250px;
+        align-items: center;
+        padding: 0px;
+        background-position: center;
+    }
+    
+    #charizardesquerda {
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        padding: 0px;
+        background-position: center;
+    }
+    /* Imagem da apresentação do grupo */
+    #Apresentaçãogrupo {
+        height: 500px;
+        margin-top: 50px;
+    }
+    /*MAIN*/
+    
+    /*FOOTER*/
+    footer {
+        height: 300px;
+        width: 100%;
+        
+        #frase {
+            font-size: 16px;
+            padding-top: 20px;
+        }
+        
+        #Final {
+            font-size: 18px;
+        }
+    }
+    
+    /*FOOTER*/
+}
+
+@media screen and (max-width: 767px) {
+    
+    /*HEADER*/
+    header {
+        padding-top: 5px;
+        height: 460px;
+        font-size: 35px;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 0px
+    }
+    
+    a {
+        font-size: 19px;
+        text-align: center;
+    }
+    
+    #Letras {
+        justify-content: center;
+    }
+    
+    #LogoPokemon {
+        background-position: center;
+        height: 400px;
+    }
+    
+    /*HEADER*/
+    
+    /*MAIN*/
+    
+    /* Texto de apresentação */
+    #txtapresentação {
+        font-size: 24px;
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    
+    /* Containers direita/esquerda */
+    .direita {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px 10px;
+        align-items: center;
+    }
+    
+    .esquerda {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    
+    .fontedireita,
+    .fonteesquerda {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    /* Imagens */
+    #umbreonesquerda {
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        padding: 0px;
+        background-position: center;
+    }
+    
+    #dragonitedireita {
+        width: 100%;
+        height: 250px;
+        align-items: center;
+        padding: 0px;
+        background-position: center;
+    }
+    
+    #pikachudireita {
+        width: 100%;
+        height: 250px;
+        align-items: center;
+        padding: 0px;
+        background-position: center;
+    }
+    
+    #charizardesquerda {
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        padding: 0px;
+        background-position: center;
+    }
+    /* Imagem da apresentação do grupo */
+    #Apresentaçãogrupo {
+        height: 300px;
+        margin-top: 50px;
+    }
+    /*MAIN*/
+
+    /*FOOTER*/
+    footer {
+        height: 420px;
+        width: 100%;
+        
+        #frase {
+            font-size: 16px;
+            padding-top: 20px;
+        }
+
+        #Final {
+            font-size: 18px;
+        }
+    }
+
+    /*FOOTER*/
+}
+
+/*RESPONSIVIDADE*/
