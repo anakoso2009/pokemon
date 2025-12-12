@@ -1,3 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
+
+.sessao-escuridao {
+    background: url("/img/giphy.gif") ;
+    display: flex;
+    flex-direction: column;
+    background-size: cover; 
+    height: 100vh;  
+}
+
+.titulo-pequeno {
+margin-top: 60px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: -10px;
+    
+
+}
+
+.titulo-grande-container {
+    display: flex;           
+    justify-content: center; 
+    height: 150px;     
+
+ }
+
+
+.titulo-grande {
+    font-family: "Flavors", cursive;
+    font-size: 120px;
+  text-align: center;
+    color: #ddb6ee;
+    position:absolute;
+    font-weight: 300;
+}
+
+
+
+.titulo-grande.blur {
+    color: #b90cd8;
+text-align: center;
+    filter: blur(5px);
+    font-size: 125px;
+}
+
+
+
+/*header*/ 
+
+*{
+    margin: 0%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+
+}
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 25px; 
+        
+      }
+    
+      }
+    
+      a {
+        padding: 10px 18px;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 0;
+        font-size: 20px;
+         font-family: "Lexend Deca", sans-serif;
+      }
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
@@ -53,8 +143,7 @@ a {
     text-align: right;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
+
 
 #LogoPokemon {
     background-image: url(../IMG/Logo\ Pokemon.png);
@@ -64,6 +153,85 @@ a {
     background-repeat: no-repeat;
 }
 
+
+/*cards*/
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* ---------------- CARD ---------------- */
+
+.pokemon-card {
+    background: linear-gradient(180deg, #BC36FF, #D5D5D5);
+    border-radius: 14px;
+    padding: 14px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    transition: transform .2s;
+    position: relative;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-6px);
+}
+
+/* FRENTE */
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 5px;
+}
+
+.poke-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background-color: rgb(229, 221, 235) o;
+  
+}
+
+.poke-name {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.know-more {
+  font-size: 13px;
+  opacity: .8;
+  color: rgb(200, 0, 245);
+}
+
+/* VERSO */
+.card-back {
+  display: none;
+  font-size: 16px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card-back p {
+  margin: 6px 0;
+}
+
+/* QUANDO ABRE */
+.pokemon-card.open .card-front { display: none; }
+.pokemon-card.open .card-back { display: block; }
+
+/* Aplica fonte Lexend a tudo */
+.pokemon-card,
+.pokemon-card * {
+  font-family: "Lexend Deca", sans-serif;
+}
+=======
 /*HEADER*/
 
 
