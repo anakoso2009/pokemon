@@ -1,70 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
 }
 
-body {
-  background-image: linear-gradient(to top,
-      rgb(246, 246, 246),
-      rgb(246, 246, 246),
-      rgb(246, 246, 246),
-      rgb(146, 146, 0));
-  font-family: "Lexend Deca", sans-serif;
+
+
+/* Sessão Escuridão */
+.sessao-escuridao {
+    background: url("../IMG/giphy.gif");
+    display: flex;
+    flex-direction: column;
+    background-size: cover; 
+    height: 100vh;  
 }
 
+.titulo-pequeno {
+    margin-top: 60px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.titulo-grande-container {
+    display: flex;           
+    justify-content: center; 
+    height: 150px;     
+}
+
+.titulo-grande {
+    font-family: "Flavors", cursive;
+    font-size: 120px;
+    text-align: center;
+    color: #ddb6ee;
+    position: absolute;
+    font-weight: 300;
+}
+
+.titulo-grande.blur {
+    color: #b90cd8;
+    text-align: center;
+    filter: blur(5px);
+    font-size: 125px;
+}
 
 /* HEADER */
 header {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
 }
 
 nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+    list-style: none;
+    display: flex;
+    gap: 25px; 
 }
 
-a {
-  padding: 10px 18px;
-  color: #000;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Lexend Deca", sans-serif;
+nav a {
+    padding: 10px 18px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 #Letras {
-  color: black;
-  font-size: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    color: black;
+    font-size: 26px;
+    text-align: right;
+    display: flex;
+    align-items: center;
 }
 
 #LogoPokemon {
-  background-image: url(../IMG/Logo\ Pokemon.png);
-  width: 250px;
-  height: 250px;
-  background-size: contain;
-  background-repeat: no-repeat;
+    background-image: url(../IMG/Logo\ Pokemon.png);
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 
 /* FOOTER */
 .footer {
@@ -107,59 +138,36 @@ a {
   color: #555;
 }
 
-/* TÍTULO PRINCIPAL */
-#tituloprincipal {
-  font-family: 'Ingrid Darling', cursive;
-  font-size: 300px;
-  text-align: center;
-  margin: 10px 0;
-  color: rgb(248, 248, 248);
-  font-weight: 300;
-    filter: drop-shadow(0 0 10px rgb(57, 33, 0));
-}
-
 
 /* CARD */
 .pokemon-card {
-  width: 240px;
-  background: #fff;
-  border-radius: 8px;
+  width: 230px;          
+  background: linear-gradient(180deg, #4c0059, #ffffff);
+  border-radius: 14px;
   padding: 14px;
   cursor: pointer;
   box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
   transition: transform .2s;
   position: relative;
-  border: 8px solid rgb(83, 138, 0);
-  min-height: 260px;
+  min-height: 200px;
+  filter: drop-shadow(0 0 10px rgb(139, 0, 209));
 }
 
 .pokemon-card:hover {
-  transform: translateY(-50px);
-  border: 4px solid rgb(138, 124, 0);
-  box-shadow: 0 10px 25px rgb(163, 163, 0);
-  transform: scale(1.1);
-  
+  transform: translateY(-20px);
+  filter: drop-shadow(0 0 10px rgb(139, 0, 209));
 
   .poke-name {
     color: #ffffff;
-    filter: drop-shadow(0 0 5px rgb(116, 65, 0));
-  }
-
-  .poke-img {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-    filter: drop-shadow(0 0 10px rgb(114, 70, 0));
+    filter: drop-shadow(0 0 10px rgb(30, 0, 56));
   }
 
   .saibamais {
-    color: #3d1f00;
+    color: #720026b4;
   }
-
 }
 
 /* FRENTE */
-
-
 .cardfrente {
   display: flex;
   flex-direction: column;
@@ -169,60 +177,50 @@ a {
 }
 
 .poke-img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 160px;
   object-fit: contain;
-  filter: drop-shadow(0 0 10px rgb(45, 93, 0));
-
+  
 }
-
-
+.poke-img:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
 
 .poke-name {
-  font-size: 30px;
+  text-transform: capitalize;
+  font-size: 20px;
   margin: 0;
   text-align: center;
-  color: #bfc200;
+  color: #1f004e
 }
-
-
 
 .saibamais {
   font-size: 13px;
-  color: #bfc200;
+  color: #9800c2ae;
   opacity: .8;
   text-align: center;
 }
 
-#habil p {
-  font-size: 16px;
-}
-
-strong {
-  color: #99a700;
-}
-
 /* VERSO */
-
-
 .cardtras {
   display: none;
-  font-size: 14px;
   line-height: 1.4;
   background-color: #fff;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100%;
+  height: 100%;          
 }
 
 .cardtras p {
   margin: 6px 0;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
   text-align: center;
 }
 
@@ -244,17 +242,22 @@ strong {
 
 /* GRID */
 .pokemon-grid {
+  
+  padding-top: 40px;
   display: grid;
-  grid-template-columns: repeat(4, 260px);
-  gap: 20px;
+  grid-template-columns: repeat(4, 280px);
+  gap: 15px;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: center;
-  align-items: start;
+  justify-content: center;  
+  align-items: center;
+  
 }
 
 
-
+strong {
+  color: #c70049;
+}
 
 
 
@@ -278,10 +281,10 @@ strong {
     margin: -50px;
   }
 
-
+  
   .pokemon-grid {
-    grid-template-columns: repeat(3, 230px);
-    gap: 10px;
+    grid-template-columns: repeat(3, 260px);
+    gap: 7px;
     justify-content: center;
     margin-left: 10px;
   }
@@ -332,10 +335,7 @@ strong {
     margin: -50px;
   }
 
-  #tituloprincipal {
-    font-size: 150px;
-  }
-
+  
   #Letras {
     justify-content: center;
     font-size: 20px;
@@ -345,7 +345,6 @@ strong {
     width: 200px;
     min-height: 300px;
   }
-
   .pokemon-grid {
     grid-template-columns: repeat(2, 230px);
     gap: 18px;
@@ -395,11 +394,26 @@ strong {
     text-align: center;
   }
 
+.sessao-escuridao {
+    background: url("../IMG/giphy.gif");
+    display: flex;
+    flex-direction: column;
+    background-size: cover; 
+   width: 100%;
+    height: 100vh;
+}
+
+
+header nav a {
+  font-size: 14px;   /* tamanho menor para mobile */
+  text-align: center;
+  margin: -9px;
+  background: none;  /* evita fundo aquamarine */
+}
   a {
-    font-size: 17px;
     text-align: center;
-    margin: -10px;
-    text-decoration: underline gray;
+    text-decoration:underline gray;
+    background-color: aquamarine;
   }
 
   #LogoPokemon {
@@ -409,35 +423,29 @@ strong {
     margin: -50px;
   }
 
-  #tituloprincipal {
-    font-size: 150px;
+  .titulo-grande {
+    font-size: 90px;
   }
 
+  .titulo-grande.blur {
+    font-size: 92px;
+}
+
+  
   #Letras {
     justify-content: center;
     font-size: 20px;
   }
 
   .pokemon-card {
-    width: 90%;
-    /* ocupa quase toda a largura da tela */
-    max-width: 300px;
+    width: 90%;                   /* ocupa quase toda a largura da tela */
+    max-width: 300px; 
   }
-
-  header nav a {
-  font-size: 14px;   /* tamanho menor para mobile */
-  text-align: center;
-  margin: -9px;
-  background: none;  /* evita fundo aquamarine */
-}
-
   .pokemon-grid {
-    grid-template-columns: 1fr;
-    /* um card por linha */
+    grid-template-columns: 1fr;   /* um card por linha */
     gap: 18px;
-    margin: 20px auto;
-    /* centraliza horizontalmente */
-    justify-items: center;
+    margin: 20px auto;            /* centraliza horizontalmente */
+    justify-items: center; 
   }
 
   .poke-img {
@@ -464,3 +472,6 @@ strong {
     font-size: 12px;
   }
 }
+
+
+
