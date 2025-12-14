@@ -1,30 +1,6 @@
 const grid = document.getElementById("grid");
 
-const typeColors = {
-  normal: "#A8A77A",
-  fire: "#EE8130",
-  water: "#6390F0",
-  electric: "#F7D02C",
-  grass: "#7AC74C",
-  ice: "#96D9D6",
-  fighting: "#C22E28",
-  poison: "#A33EA1",
-  ground: "#E2BF65",
-  flying: "#A98FF3",
-  psychic: "#F95587",
-  bug: "#A6B91A",
-  rock: "#B6A136",
-  ghost: "#735797",
-  dragon: "#6F35FC",
-  steel: "#B7B7CE",
-  fairy: "#D685AD",
-  dark: "#705746",
-};
-
-/* ================================
-   BUSCA SOMENTE POKÉMON VOADOR
-================================ */
-async function fetchFlyingPokemons(limit = 40) {
+async function fetchFlyingPokemons(limit = 12) {
   try {
     const res = await fetch(`https://pokeapi.co/api/v2/type/flying`);
     const data = await res.json();
@@ -82,22 +58,21 @@ function createCardHTML(data) {
   card.classList.add("pokemon-card");
 
   card.innerHTML = `
-    <div class="card-front">
+    <div class="cardfrente">
       <img src="${imgUrl}" alt="${name}" class="poke-img">
       <h2 class="poke-name">${name}</h2>
       <span class="saibamais"> clique e saiba mais </span>
     </div>
 
-    <div class="card-back">
+    <div class="cardtras">
       <span class="poke-id">#${id}</span>
 
       <p><strong>Altura:</strong> ${height}</p>
       <p><strong>Peso:</strong> ${weight}</p>
       <p><strong>Ataque:</strong> ${atk}</p>
       <p><strong>Defesa:</strong> ${def}</p>
-      <div class="habil">
-        <p><strong>Habilidades:</strong> ${abilities}</p>
-      </div>
+      <p><strong>Habilidades:</strong></p>
+      <div id="habil"> <p>${abilities}</p></div>
     </div>
   `;
 
