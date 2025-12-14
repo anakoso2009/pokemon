@@ -7,11 +7,8 @@
 }
 
 body {
-    background-image: url(../IMG/Fundo.png);
+    background-image: url(../IMG/fundo2.png);
 }
-
-
-
 
 /*BOTÃO*/
 
@@ -29,8 +26,6 @@ body {
     cursor: pointer;
     
 }
-
-
 /*BOTÃO*/
 
 /*HEADER*/
@@ -40,7 +35,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #000000;
 
 }
 
@@ -61,7 +56,7 @@ nav {
 
 a {
     padding: 10px 18px;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 0;
     font-size: 20px;
@@ -71,7 +66,7 @@ a {
 
 
 #Letras {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 26px;
     text-align: right;
     display: flex;
@@ -103,6 +98,7 @@ a {
     font-size: 32px;
     color: #FBA700;
     text-align: center;
+    margin-top: 50px;
 }
 
 /*direita*/
@@ -202,12 +198,12 @@ footer {
     padding-top: 5px;
     width: 100%;
     height: 190px;
-    background-color: #ffffff;
+    background-color: #000000;
 
     #frase {
         font-family: "Lexend Deca", sans-serif;
         font-size: 18px;
-        color: black;
+        color: rgb(255, 255, 255);
         text-align: center;
         padding-top: 10px;
     }
@@ -215,7 +211,7 @@ footer {
     #Final {
         font-family: "Lexend Deca", sans-serif;
         font-size: 20px;
-        color: black;
+        color: rgb(255, 255, 255);
         text-align: center;
         padding-top: 15px;
     }
@@ -372,6 +368,7 @@ footer {
         justify-content: center;
     }
     
+
     /* Texto de apresentação */
     #txtapresentação {
         font-size: 24px;
