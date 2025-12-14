@@ -72,7 +72,8 @@ function createCardHTML(data) {
       <p><strong>Ataque:</strong> ${atk}</p>
       <p><strong>Defesa:</strong> ${def}</p>
       <p><strong>Habilidades:</strong></p>
-      <div id="habil"> <p>${abilities}</p></div>
+      <div id="habil"> <p>${abilities}</p>
+</div>
     </div>
   `;
 
