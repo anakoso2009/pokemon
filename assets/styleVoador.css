@@ -13,7 +13,7 @@ body {
   background-image: linear-gradient(to top,
       rgb(246, 246, 246),
       rgb(246, 246, 246),
-      rgb(246, 246, 246),
+      rgba(129, 193, 0, 0.47),
       rgb(146, 146, 0));
   font-family: "Lexend Deca", sans-serif;
 }
@@ -176,6 +176,13 @@ a {
 
 }
 
+#textinho {
+  font-size: 20px;
+  text-align: center;
+  margin: 2cm;
+  color: #ffffff;
+  margin-top: -1cm;
+}
 
 
 .poke-name {
@@ -445,6 +452,13 @@ strong {
     height: 200px;
     margin-bottom: 30px;
   }
+
+  #textinho {
+  font-size: 15px;
+  margin: 40px;
+  margin-top: -30px;
+  
+}
 
   .footer {
     padding: 25px 10px;

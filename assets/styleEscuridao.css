@@ -2,11 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap');
 
 * {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-image: linear-gradient(to top,
+      rgb(246, 246, 246),
+      rgb(246, 246, 246),
+      rgba(124, 0, 233, 0.267),
+      rgb(57, 0, 88));
+  font-family: "Lexend Deca", sans-serif;
+}
 
 
 /* Sessão Escuridão */
@@ -35,7 +46,7 @@
 
 .titulo-grande {
     font-family: "Flavors", cursive;
-    font-size: 120px;
+    font-size: 160px;
     text-align: center;
     color: #ddb6ee;
     position: absolute;
@@ -43,10 +54,10 @@
 }
 
 .titulo-grande.blur {
-    color: #b90cd8;
+    color: #d900ff;
     text-align: center;
     filter: blur(5px);
-    font-size: 125px;
+    font-size: 165px;
 }
 
 /* HEADER */
@@ -88,6 +99,15 @@ nav a {
     align-items: center;
 }
 
+
+#textinho {
+  font-size: 30px;
+  text-align: center;
+  margin: 2cm;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
 #LogoPokemon {
     background-image: url(../IMG/Logo\ Pokemon.png);
     width: 250px;
@@ -119,18 +139,20 @@ nav a {
   margin-bottom: 25px;
 }
 
-.footer-links {
+ul.footer-links {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  text-decoration: none;
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
+  color: #ddd;
 }
 
 .footer-links a:hover {
-  color: #e60012;
+  color: #09005c;
 }
 
 .footer-copy {
@@ -408,12 +430,10 @@ header nav a {
   font-size: 14px;   /* tamanho menor para mobile */
   text-align: center;
   margin: -9px;
-  background: none;  /* evita fundo aquamarine */
 }
   a {
     text-align: center;
     text-decoration:underline gray;
-    background-color: aquamarine;
   }
 
   #LogoPokemon {
@@ -471,6 +491,11 @@ header nav a {
   .footer-copy {
     font-size: 12px;
   }
+   #textinho {
+  font-size: 25px;
+  margin: 40px;
+  
+}
 }
 
 

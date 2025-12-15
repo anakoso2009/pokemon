@@ -13,8 +13,8 @@ body {
     to top,
     rgb(246, 246, 246),
     rgb(246, 246, 246),
-    rgb(246, 246, 246),
-    rgb(0, 88, 146)
+    rgba(57, 54, 255, 0.339),
+    rgb(29, 0, 146)
   );
   font-family: "Lexend Deca", sans-serif;
 }
@@ -107,6 +107,14 @@ a {
   color: #555;
 }
 
+
+#textinho {
+  font-size: 20px;
+  text-align: center;
+  margin: 2cm;
+  color: #ffffff;
+}
+
 /* TÍTULO PRINCIPAL */
 #tituloprincipal {
   font-family: "Flavors", cursive;
@@ -129,7 +137,7 @@ a {
   box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
   transition: transform .2s;
   position: relative;
-  border: 8px solid rgb(0, 147, 215);
+  border: 8px solid rgba(0, 29, 215, 0.675);
   min-height: 200px;
 }
 
@@ -382,7 +390,7 @@ strong {
   }
 
   a {
-    font-size: 17px;
+    font-size: 12px;
     text-align: center;
     margin: -10px;
     text-decoration:underline gray;
@@ -437,4 +445,11 @@ strong {
   .footer-copy {
     font-size: 12px;
   }
+
+   #textinho {
+  font-size: 15px;
+  margin: 40px;
+  margin-top: -30px;
+  
+} 
 }

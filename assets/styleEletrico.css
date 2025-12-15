@@ -13,8 +13,8 @@ body {
     to top,
     #ffffff,
     #ffffff,
-    #ffffff,
-    #ff5392  );
+    #ff72ce7d,
+    #ff1751  );
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -40,6 +40,7 @@ nav ul {
   display: flex;
   gap: 25px;
 }
+
 
 a {
   padding: 10px 18px;
@@ -242,6 +243,15 @@ strong {
 }
 
 
+#textinho {
+  font-size: 20px;
+  text-align: center;
+  margin: 2cm;
+  color: #ffffff;
+  margin-top: -1cm;
+}
+
+
 
 
 /* RESPONSIVIDADE */
@@ -364,7 +374,7 @@ strong {
 
 
 @media screen and (min-width: 200px) and (max-width: 547px) {
-  header {
+   header {
     height: auto;
     padding: 25px 0;
     gap: 20px;
@@ -379,11 +389,12 @@ strong {
   }
 
   a {
-    font-size: 17px;
+    font-size: 12px;
     text-align: center;
     margin: -10px;
     text-decoration:underline gray;
   }
+
 
   #LogoPokemon {
     width: 150px;
@@ -391,6 +402,8 @@ strong {
     background-position: center;
     margin: -50px;
   }
+
+
 
   #tituloprincipal {
     font-size: 80px; 
@@ -434,4 +447,11 @@ strong {
   .footer-copy {
     font-size: 12px;
   }
+
+   #textinho {
+  font-size: 15px;
+  margin: 40px;
+  margin-top: -30px;
+  
+}
 }
